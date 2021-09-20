@@ -192,3 +192,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// E-mail
+function sendMail() {
+    var link = "mailto:lucascalebe07@hotmail.com"
+             + "?cc=lucascalebe97@@gmail.com"
+             + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
+             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    ;
+
+    window.location.href = link;
+}
